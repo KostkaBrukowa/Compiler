@@ -1,0 +1,28 @@
+fun eleven(): Number {
+    return 11;
+}
+
+fun elevenPlusX(x: Number): Number {
+    return 11 + x;
+}
+
+fun execute(check: Function<Arg<>, Returns<Number>>): Number {
+   return check();
+}
+
+fun starter(): List {
+    return [1,2];
+}
+
+fun silnia(x: Number): Number {
+    if(x == 0) return 1;
+
+    return x * silnia(x - 1);
+}
+
+fun trueValue(): Boolean { return true; }
+
+fun main(): Number {
+
+	return silnia(5);
+}
